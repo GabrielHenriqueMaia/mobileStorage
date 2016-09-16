@@ -1,0 +1,25 @@
+{
+  "name": "mobilestore",
+  "version": "1.0.0",
+  "description": "Um simples sistema de estoque em nodeJs e MongoDb",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielHenriqueMaia/mobileStorage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielHenriqueMaia/mobileStorage/issues"
+  },
+  "homepage": "https://github.com/GabrielHenriqueMaia/mobileStorage#readme",
+  "dependencies": {
+    "express":"*",
+    "body-parser":"*",
+    "pug":"*",
+    "mongoose":"*"
+  }
+}
