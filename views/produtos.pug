@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+    table
+        thead
+            tr
+                td Codigo
+                td Nome
+        tbody
+            for produto in produtos
+                tr
+                    td= produto.codigo
+                    td= produto.nome

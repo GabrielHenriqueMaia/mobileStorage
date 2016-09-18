@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var produtoSchema = mongoose.Schema({
 	codigo: Number,
-	name: String,
+	nome: String,
 	codigoBarras: String
 });
 
