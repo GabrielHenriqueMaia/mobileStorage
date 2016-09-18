@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
 
 var produtoSchema = mongoose.Schema({
-	name: String
+	codigo: Number,
+	name: String,
+	codigoBarras: String
 });
 
 module.exports = produtoSchema;
