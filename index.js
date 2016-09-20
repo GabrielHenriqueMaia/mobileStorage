@@ -26,8 +26,8 @@ app.use('/', basicRoutes);
 app.use('/produtos', produtoRoutes);
 
 //Iniciando o servidor
-app.listen(config.port);
-console.log('Servidor Rodando');
+app.listen(config.port, function () { console.log('Servidor rodando na porta 3000') });
+
 
 //conecao com o banco
 mongoose.connect(config.connectionString);
