@@ -13,9 +13,20 @@ router.get("/", function (req, res) {
 		if (err) {
 			console.log(err);
 		}else{
-			res.render('produtos', {produtos:produtos})
+			res.render('produtos', {produtos:produtos});
 		}
 	});
+});
+
+router.post("/", function (req, res) {
+	produto = new Produto({codigo:req.body.codigo, nome:req.body.nome});
+	produto.save(function (err, produto) {
+		if (err){
+			console.log(err);
+		}else{
+			res.redirect('/produtos');
+		}
+	})
 });
 
 module.exports = router;
